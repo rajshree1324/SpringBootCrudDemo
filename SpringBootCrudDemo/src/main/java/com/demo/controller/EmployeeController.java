@@ -22,7 +22,7 @@ public class EmployeeController {
 
 	@PostMapping("employee")
 	public Employee saveEmployee(@RequestBody Employee employee) {
-		
+		System.out.println("save new employee");
 		return employeeServiceInterface.saveEmployee(employee);
 	}
 	
